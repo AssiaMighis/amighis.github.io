@@ -13,14 +13,12 @@
 <body>
   <header class="site-header">
     <nav class="container nav">
-      <a class="brand" href="#">Assia Mighis</a>
+      <a class="brand" href="index.html">Assia Mighis</a>
       <input id="nav-toggle" class="nav-toggle" type="checkbox" />
       <label for="nav-toggle" class="burger" aria-label="Menu">&#9776;</label>
       <ul class="menu">
-        <li><a href="#about">About me</a></li>
-        <li><a href="#background">Academic background</a></li>
-        <li><a href="#interests">Personal interests</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html#about">About me</a></li>
+        <li><a href="background.html">Academic background</a></li>
       </ul>
     </nav>
   </header>
@@ -29,8 +27,7 @@
     <section class="hero">
       <div class="container">
         <h1>Hi, I'm Assia.</h1>
-        <p>PhD student in Computer Science at the IRIT laboratory (SEPIA team, Toulouse, France), under the supervision of Georges Da Costa and Millian Poquet.</p>
-        <p><a class="btn" href="#about">Learn more</a></p>
+        <p>PhD student in Computer Science at the IRIT laboratory (SEPIA team, Toulouse, France), under the supervision of Georges Da Costa and Millian Poquet, and an <strong>Engineer in Computer Science (Génie Informatique)</strong>.</p>
       </div>
     </section>
 
@@ -43,41 +40,27 @@
         <li><strong>Modeling and characterization of applications:</strong> Detect when an application switches from one phase to another; determine phase properties (I/O-bound, memory-bound, CPU-bound...). Software will be developed to detect and characterize phases of HPC applications during their execution.</li>
         <li><strong>Model the impact of various levers</strong> (DVFS, network and I/O reconfiguration, ... ) on performance and energy.</li>
       </ul>
-    </section>
 
-    <section id="background" class="section container">
-      <h2>Academic background</h2>
-      <ul class="timeline">
-        <li>
-          <div class="degree">Engineering degree (Master’s) in Computer Science — Cybersecurity specialization</div>
-          <div class="place">CY Tech</div>
-          <div class="time">2021–2024</div>
-        </li>
-        <li>
-          <div class="degree">Preparatory Classes for Engineering Schools (TSI)</div>
-          <div class="place">Lycée Mohammed VI d’Excellence, Morocco</div>
-          <div class="time">2019–2021</div>
-        </li>
-        <li>
-          <div class="degree">Baccalaureate in Science and Industrial Technologies (STM)</div>
-          <div class="place">Morocco</div>
-          <div class="time">2019</div>
-        </li>
-      </ul>
     </section>
 
     <section id="interests" class="section container">
       <h2>Personal interests</h2>
-      <ul class="cards">
+      <ul>
         <li>Sports &amp; fitness</li>
         <li>Traveling &amp; discovering new cultures</li>
       </ul>
     </section>
 
+    <section id="presentation" class="section container">
+      <h2>Presentation (PDF)</h2>
+      <p><a class="btn" href="assets/presentations/phd-topic.pdf" target="_blank" rel="noopener">Download</a></p>
+      <div class="pdf-embed"><iframe src="assets/presentations/phd-topic.pdf" title="PhD topic presentation"></iframe></div>
+    </section>
+
     <section id="contact" class="section container">
       <h2>Contact</h2>
       <p>Email: <a href="mailto:assia.mighis@irit.fr">assia.mighis@irit.fr</a></p>
-      <p>LinkedIn: <a href="#" aria-label="Assia Mighis on LinkedIn">Assia Mighis</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/" aria-label="Assia Mighis on LinkedIn">Assia Mighis</a></p>
     </section>
   </main>
 
@@ -87,8 +70,6 @@
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
